@@ -1,0 +1,17 @@
+﻿<Window x:Class="StudyWPF1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudyWPF1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle Fill="#FFFBF2" HorizontalAlignment="Left" Height="277" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="774"/>
+        <Label Content="【売上】現金で売り上げた" HorizontalAlignment="Left" Height="27" Margin="20,24,0,0" VerticalAlignment="Top" Width="754" Style="{StaticResource LabelBlue}"/>
+        <Label Content="令和3年5月23日(日)" HorizontalAlignment="Left" Height="24" Margin="20,59,0,0" VerticalAlignment="Top" Width="124" Foreground="#671F22"/>
+        <Calendar HorizontalAlignment="Left" Margin="24,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="金額" HorizontalAlignment="Left" Height="24" Margin="238,59,0,0" VerticalAlignment="Top" Width="124" Style="{StaticResource LabelBlue}"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="238,90,0,0" TextWrapping="Wrap" Text="123,456,789" VerticalAlignment="Top" Width="124" FontSize="22"/>
+    </Grid>
+</Window>
