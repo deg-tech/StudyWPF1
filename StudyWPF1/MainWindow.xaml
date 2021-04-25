@@ -7,11 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Rectangle Fill="#FFFBF2" HorizontalAlignment="Left" Height="277" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="774"/>
-        <Label Content="【売上】現金で売り上げた" HorizontalAlignment="Left" Height="27" Margin="20,24,0,0" VerticalAlignment="Top" Width="754" Style="{StaticResource LabelBlue}"/>
-        <Label Content="令和3年5月23日(日)" HorizontalAlignment="Left" Height="24" Margin="20,59,0,0" VerticalAlignment="Top" Width="124" Foreground="#671F22"/>
-        <Calendar HorizontalAlignment="Left" Margin="24,90,0,0" VerticalAlignment="Top"/>
-        <Label Content="金額" HorizontalAlignment="Left" Height="24" Margin="238,59,0,0" VerticalAlignment="Top" Width="124" Style="{StaticResource LabelBlue}"/>
-        <TextBox HorizontalAlignment="Left" Height="33" Margin="238,90,0,0" TextWrapping="Wrap" Text="123,456,789" VerticalAlignment="Top" Width="124" FontSize="22"/>
+        <Rectangle Name="JournalScreen" Style="{StaticResource JournalScreenStyle}"/>
+        <Label Name="JournalName" Style="{StaticResource JournalNameStyle}">
+            【売上】現金で売り上げた
+        </Label>
+        <Label Name="JournateDate" Style="{StaticResource JournalDateStyle}">
+            令和3年5月23日(日)
+        </Label>
+        <Calendar Name="JournalCalenadr" Style="{StaticResource JournalCalendarStyle}"/>
+        <Label Name="JournalMoneyLabel" Style="{StaticResource JournalMoneyLabelStyle}">
+            金額
+        </Label>
+        <TextBox Name="JournalMoney" Style="{StaticResource JounalMoneryStyle}"/>
+        <Label Name="JournalRemarksLabel" Style="{StaticResource JournalRemarksLabelStyle}">
+            摘要
+        </Label>
+        <TextBox Name="JournalRemarks" Style="{StaticResource JournalRemarksStyle}">
+            １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０２１３４５６
+        </TextBox>
     </Grid>
 </Window>
